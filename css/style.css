@@ -1,0 +1,47 @@
+:root {
+    --navbar-height: 5rem;
+}
+
+#my_app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    height: var(--navbar-height);
+    width: 100%;
+}
+
+nav, main {
+    height: calc(100% - var(--navbar-height) );
+}
+
+nav {
+    background: orangered;
+    width: 8rem;
+}
+
+main {
+    width: calc(100% - 8rem);
+    overflow-y: auto;
+    background: greenyellow;
+}
+
+#my_main_header {
+    background-color: #165bba;
+    color: white;
+}
+
+.my_finta_card {
+    border: solid 2px red;
+}
+
+.my_searchbar {
+    background: gray;
+}
+
+.my_logo {
+    max-height: 3rem;
+}
